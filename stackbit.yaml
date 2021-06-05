@@ -1,0 +1,42 @@
+stackbitVersion: ~0.3.0
+ssgName: jekyll
+publishDir: _site
+dataDir: _data
+pagesDir: ''
+models:
+  page_1:
+    type: page
+    label: Page 1
+    match: '**/*'
+    fields:
+      - type: string
+        name: layout
+        label: Layout
+      - type: string
+        name: tittle
+        label: Tittle
+      - type: string
+        name: description
+        label: Description
+      - type: image
+        name: image
+        label: Image
+      - type: string
+        name: title
+        label: Title
+      - type: list
+        name: categories
+        label: Categories
+        items:
+          type: string
+      - type: list
+        name: tags
+        label: Tags
+        items:
+          type: string
+      - type: boolean
+        name: fullview
+        label: Fullview
+      - type: string
+        name: tagline
+        label: Tagline
